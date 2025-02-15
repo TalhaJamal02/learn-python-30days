@@ -112,7 +112,7 @@ Below is a summary of the 30-day plan:
 ### Prerequisites
 - Basic computer skills and a willingness to learn.
 - [Python 3.6+](https://www.python.org/downloads/) installed on your system.
-- A code editor like [Visual Studio Code](https://code.visualstudio.com/) or [PyCharm](https://www.jetbrains.com/pycharm/).
+- A code editor like [Visual Studio Code](https://code.visualstudio.com/) or [Cursor - The AI Code Editor](https://www.cursor.com/).
 
 ### Installation
 1. **Clone the Repository:**
