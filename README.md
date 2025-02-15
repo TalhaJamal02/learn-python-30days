@@ -117,5 +117,5 @@ Below is a summary of the 30-day plan:
 ### Installation
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/python-learning-30days.git
+   git clone https://github.com/TalhaJamal02/learn-python-30days.git
    cd python-learning-30days
