@@ -1,0 +1,2 @@
+Hello, This is Day 12 of Python learning
+This is a new line added to the file

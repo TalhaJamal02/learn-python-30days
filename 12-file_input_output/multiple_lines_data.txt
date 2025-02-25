@@ -1,0 +1,4 @@
+Python is fun!
+Python is easy!
+File handling is easy!
+Let's practice!
