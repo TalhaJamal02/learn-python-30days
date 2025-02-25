@@ -38,7 +38,8 @@ with open("multiple_lines_data.txt", "r") as file:
 # Practice Tasks:
 
 # 1.Create a program that writes user input to a file and then reads it back.
-user_input = str(input("Enter you text: "))
+
+user_input = str(input("Enter your text: "))
 with open("user_input.txt", "w") as file:
     file.write(user_input)
     print("Data written to file!")
