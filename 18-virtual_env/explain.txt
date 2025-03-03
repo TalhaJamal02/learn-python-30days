@@ -1,0 +1,17 @@
+Package Management & Virtual Environments
+
+Today, I delved into Package Management and Virtual Environments in Python, essential concepts for managing project dependencies effectively.
+
+Key Learnings:
+- Installing external packages using pip
+- Understanding the significance of virtual environments in maintaining project-specific dependencies
+- Creating and activating virtual environments with venv
+- Installing and managing different package versions in isolated environments
+- Generating a requirements.txt file for dependency management
+
+Practice Tasks:
+- Set up a virtual environment for a project
+- Installed commonly used libraries like requests and numpy
+- Practiced activating, deactivating, and managing dependencies within the virtual environment
+
+Virtual environments play a crucial role in ensuring consistency and avoiding conflicts across different projects.
