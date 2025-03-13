@@ -1,0 +1,4 @@
+Buy groceries - Milk, eggs, and bread.
+Finish Python project - Add Flask templates and styling.
+Read a blog on AI - Check out recent advancements in AI.
+Workout reminder - 30-minute jog in the evening.
