@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flask Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-900 text-gray-100"></body>
+    <div class="container mx-auto max-w-2xl p-6">
+      <!-- Title -->
+      <h1 class="text-3xl font-semibold text-center mb-6">Weather Dashboard</h1>
+
+      <!-- Weather Form -->
+      <div class="bg-gray-800 shadow-lg rounded-lg p-6">
+        <form method="post" class="flex flex-col gap-4">
+          <input
+            type="text"
+            name="city"
+            placeholder="Enter city"
+            required
+            class="p-3 w-full border rounded-md bg-gray-700 text-white border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <button
+            type="submit"
+            class="bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-md transition duration-300"
+          >
+            Get Weather
+          </button>
+        </form>
+      </div>
+
+      <!-- Weather Result -->
+      <div class="mt-6 text-center">
+        {% if temp|default(false) %}
+        <h2 class="text-xl font-medium text-gray-200">
+          Temperature in <span class="font-bold">{{ city }}</span>: {{ temp }}°C
+        </h2>
+        {% else %}
+        <p class="text-gray-400">City not found. Try again.</p>
+        {% endif %}
+      </div>
+
+      <!-- News Section -->
+      <div class="bg-gray-800 shadow-lg rounded-lg p-6 mt-8">
+        <h2 class="text-xl font-semibold text-gray-200 mb-4">Latest News</h2>
+        {% if news and news|length > 0 %}
+        <ul class="list-disc list-inside text-gray-300">
+          {% for title in news %}
+          <li class="hover:text-blue-400 transition duration-300">
+            {{ title }}
+          </li>
+          {% endfor %}
+        </ul>
+        {% else %}
+        <p class="text-gray-400">No news available at the moment.</p>
+        {% endif %}
+      </div>
+
+      <!-- Data Visualization -->
+      <div class="bg-gray-800 shadow-lg rounded-lg p-6 mt-8 text-center">
+        <h2 class="text-xl font-semibold text-gray-200 mb-4">
+          Data Visualization
+        </h2>
+        <div class="image-container">
+          {% if plot_path %}
+          <img
+            src="{{ plot_path }}"
+            alt="Data Chart"
+            class="w-full rounded-md shadow-md"
+          />
+          {% else %}
+          <p class="text-gray-400">No data visualization available.</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
